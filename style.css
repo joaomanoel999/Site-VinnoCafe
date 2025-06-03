@@ -10,9 +10,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  outline: none;
   text-decoration: none;
-  text-transform: capitalize;
   transition: 0.2s linear;
   font-family: "Roboto", sans-serif;
 }
@@ -21,8 +19,8 @@ body {
 }
 
 #logo {
-  width: 10rem;
-  height: 10rem;
+  width: 100px;
+  height: 100px;
   margin: 0 auto;
 }
 
@@ -48,7 +46,7 @@ body {
   padding-bottom: 1.5rem;
 }
 .navbar a {
-  margin: 0 1rem;
+  margin: 0 12px;
   font-size: 1.8rem;
   color: #fff;
 }
@@ -58,27 +56,30 @@ body {
   padding-bottom: 0.5rem;
   font-size: 2rem;
 }
+
 .icons img {
-  margin: 1rem;
+  margin: 20px;
   cursor: pointer;
+  display: inline-block;
 }
+
 .icons img:hover {
-  width: 4rem;
-  height: 4rem;
+  width: 38px;
+  height: 38px;
 }
 
 .btn {
   background-color: var(--main-color);
   color: #fff;
   padding: 1rem 3rem;
-  font-size: 1.7rem;
-  margin-top: 1rem;
+  font-size: 18px;
+  margin-top: 15px;
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: 15px;
   display: inline-block;
 }
 .btn:hover {
-  font-size: 1.9rem;
+  font-size: 20px;
 }
 .home-container {
   background: url(img/home-img.jpg);
@@ -118,15 +119,27 @@ body {
   text-transform: uppercase ;
 }
 
+img{  
+    max-width: 100%; 
+    height: auto;
+    display: flex;
+    
+  }
+  @media (max-width: 800px) {
+    .about .container-img .content{
+        flex-direction: column; 
+        align-items: center; 
+    }}
+
 .about .row{
   display: flex;
   align-items: center;
   background-color: var(--black);
-  gap: 1.5rem;
-
+  gap: 20px;
 }
 .about .row .content {
-  padding: 2rem;
+  padding: 15px;
+  flex: 50%; 
 }
 .about .row .content h3 {
   color: white;
