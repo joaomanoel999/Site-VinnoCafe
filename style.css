@@ -176,6 +176,7 @@ flex-direction: row;
   color: #fff;
   font-size: 20px;
   margin-bottom: 10px;
+  text-transform: capitalize;
 }
 
 .menu .menu-container .menu-item img {
@@ -189,6 +190,7 @@ flex-direction: row;
 .menu .menu-container .menu-item .price {
   color: var(--main-color);
   font-size: 20px;
+  
 
   margin-bottom: 10px;
 } 
